@@ -1,0 +1,24 @@
+:root {
+  /* Base font family fallback stack */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  /* Base text styles */
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Font smoothing and rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Prevent automatic font synthesis */
+  font-synthesis: none;
+}
