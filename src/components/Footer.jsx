@@ -7,69 +7,47 @@ import {
   FaEnvelope,
 } from "react-icons/fa6";
 
-// import your logo
-import image3 from "../assets/image/image3.jpg";
+// Logo
+import image4 from "../assets/image/image4.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-20 pb-8">
+    <footer className="bg-[#0A3D62] text-[#E6F4F9] pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* COMPANY INFO */}
         <div>
           <div className="flex items-center gap-3 mb-4">
             <img
-              src={image3}
-              alt="Company Logo"
-              className="w-10 h-10 object-contain"
+              src={image4}
+              alt="Riverstone Logo"
+              className="w-20 h-20 object-contain"
             />
-            <h3 className="text-2xl font-bold text-white">DunMedic</h3>
+            <h3 className="text-2xl font-bold text-white">Riverstone</h3>
           </div>
 
-          <p className="text-gray-400 mb-6 leading-relaxed">
-            Caring for life with advanced medical solutions, trusted doctors,
-            and patient-focused healthcare services.
+          <p className="text-[#E6F4F9]/80 mb-6 leading-relaxed">
+            Providing trusted, compassionate, and advanced healthcare services
+            through experienced medical professionals and modern facilities.
           </p>
 
           {/* SOCIAL ICONS */}
           <div className="flex gap-4 flex-wrap">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 transition"
-            >
-              <FaFacebookF />
-            </a>
-
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-500 transition"
-            >
-              <FaLinkedinIn />
-            </a>
-
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition"
-            >
-              <FaYoutube />
-            </a>
-
-            <a
-              href="https://x.com"
-              target="_blank"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition"
-            >
-              <FaXTwitter />
-            </a>
-
-            <a
-              href="mailto:info@dunmedic.com"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-700 transition"
-            >
-              <FaEnvelope />
-            </a>
+            {[
+              { icon: <FaFacebookF />, link: "https://facebook.com" },
+              { icon: <FaLinkedinIn />, link: "https://linkedin.com" },
+              { icon: <FaYoutube />, link: "https://youtube.com" },
+              { icon: <FaXTwitter />, link: "https://x.com" },
+              { icon: <FaEnvelope />, link: "mailto:info@riverstone.com" },
+            ].map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1E8F6F] text-white hover:bg-[#F39C12] transition"
+              >
+                {item.icon}
+              </a>
+            ))}
           </div>
         </div>
 
@@ -79,13 +57,13 @@ export default function Footer() {
           <ul className="space-y-3">
             {[
               "About Us",
-              "Make Appointment",
-              "Customer Treatments",
-              "Consulting Your Health",
-              "Our Doctors Team",
+              "Book Appointment",
+              "Patient Services",
+              "Health Consultation",
+              "Our Doctors",
             ].map((link, index) => (
               <li key={index}>
-                <a href="#" className="hover:text-blue-500 transition">
+                <a href="#" className="hover:text-[#F39C12] transition">
                   {link}
                 </a>
               </li>
@@ -95,17 +73,19 @@ export default function Footer() {
 
         {/* OUR SERVICES */}
         <div>
-          <h4 className="text-lg font-bold text-white mb-6">Our Services</h4>
+          <h4 className="text-lg font-bold text-white mb-6">
+            Medical Services
+          </h4>
           <ul className="space-y-3">
             {[
-              "Surgery",
+              "General Surgery",
               "Cardiology",
-              "Pediatric",
+              "Pediatrics",
               "Anesthesiology",
-              "Psychological",
+              "Mental Health",
             ].map((service, index) => (
               <li key={index}>
-                <a href="#" className="hover:text-blue-500 transition">
+                <a href="#" className="hover:text-[#F39C12] transition">
                   {service}
                 </a>
               </li>
@@ -116,16 +96,18 @@ export default function Footer() {
         {/* PROMISE */}
         <div>
           <h4 className="text-lg font-bold text-white mb-6">Our Promise</h4>
-          <p className="text-gray-400 leading-relaxed">
-            Delivering excellence in healthcare through compassion, innovation,
-            and trust — because your health matters most.
+          <p className="text-[#E6F4F9]/80 leading-relaxed">
+            We are committed to delivering safe, ethical, and high-quality
+            healthcare — guided by compassion, integrity, and medical
+            excellence.
           </p>
         </div>
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="border-t border-gray-800 mt-16 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} DunMedic. All Rights Reserved.
+      <div className="border-t border-[#1E8F6F]/40 mt-16 pt-6 text-center text-sm text-[#E6F4F9]/70">
+        © {new Date().getFullYear()} Riverstone Medical Center. All Rights
+        Reserved.
       </div>
     </footer>
   );

@@ -2,63 +2,78 @@ import { FaHeartbeat, FaUserMd, FaHospital, FaAmbulance } from "react-icons/fa";
 
 export default function About() {
   return (
-    <main className="w-full bg-slate-50 text-slate-800">
-      {/* ================= HERO SECTION ================= */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-32">
+    <main className="w-full bg-[#F4F9FB] text-[#1F2933]">
+      {/* ================= HERO ================= */}
+      <section className="bg-gradient-to-r from-[#0A3D62] to-[#145DA0] text-white py-36">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
             About Riverstone Hospital
           </h1>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-blue-100">
-            Riverstone Hospital is built on one simple belief — healthcare
-            should be compassionate, precise, and accessible to everyone.
+            Compassionate healthcare, advanced medicine, and trusted medical
+            professionals — all focused on one thing: your well-being.
           </p>
         </div>
       </section>
 
       {/* ================= WHO WE ARE ================= */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-28">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          {/* TEXT */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
+            <span className="text-[#1E8F6F] font-semibold tracking-widest text-sm">
+              WHO WE ARE
+            </span>
+            <h2 className="text-3xl font-extrabold mt-4 mb-6">
+              A Trusted Center for Modern Healthcare
+            </h2>
             <p className="text-slate-600 mb-4 leading-relaxed">
-              Riverstone Hospital is a modern healthcare institution delivering
-              world-class medical services across diagnostics, treatment,
-              emergency care, and preventive medicine.
+              Riverstone Hospital is a modern medical institution dedicated to
+              delivering world-class healthcare services across diagnostics,
+              treatment, emergency care, and preventive medicine.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              We combine advanced medical technology with highly trained
-              professionals to ensure every patient receives safe, effective,
+              By combining advanced medical technology with highly skilled
+              professionals, we ensure every patient receives safe, effective,
               and personalized care — from first consultation to full recovery.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-10">
-            <ul className="space-y-6">
-              <li className="flex gap-4">
-                <FaHospital className="text-blue-700 text-2xl mt-1" />
+          {/* HIGHLIGHTS */}
+          <div className="bg-white rounded-2xl shadow-xl p-12">
+            <ul className="space-y-8">
+              <li className="flex gap-5">
+                <FaHospital className="text-[#145DA0] text-3xl mt-1" />
                 <div>
-                  <h4 className="font-semibold">Modern Facilities</h4>
+                  <h4 className="font-semibold text-lg">
+                    State-of-the-Art Facilities
+                  </h4>
                   <p className="text-slate-600 text-sm">
-                    Fully equipped diagnostic and treatment units.
+                    Fully equipped diagnostic, surgical, and treatment units.
                   </p>
                 </div>
               </li>
-              <li className="flex gap-4">
-                <FaUserMd className="text-blue-700 text-2xl mt-1" />
+
+              <li className="flex gap-5">
+                <FaUserMd className="text-[#145DA0] text-3xl mt-1" />
                 <div>
-                  <h4 className="font-semibold">Expert Medical Team</h4>
+                  <h4 className="font-semibold text-lg">
+                    Expert Medical Professionals
+                  </h4>
                   <p className="text-slate-600 text-sm">
-                    Certified doctors, nurses, and specialists.
+                    Board-certified doctors, nurses, and specialists.
                   </p>
                 </div>
               </li>
-              <li className="flex gap-4">
-                <FaHeartbeat className="text-blue-700 text-2xl mt-1" />
+
+              <li className="flex gap-5">
+                <FaHeartbeat className="text-[#145DA0] text-3xl mt-1" />
                 <div>
-                  <h4 className="font-semibold">Patient-Centered Care</h4>
+                  <h4 className="font-semibold text-lg">
+                    Patient-First Approach
+                  </h4>
                   <p className="text-slate-600 text-sm">
-                    Compassion, dignity, and safety come first.
+                    Compassion, safety, dignity, and respect at every stage.
                   </p>
                 </div>
               </li>
@@ -68,73 +83,71 @@ export default function About() {
       </section>
 
       {/* ================= MISSION & VISION ================= */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-28">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div className="border-l-4 border-blue-700 pl-6">
+          <div className="border-l-4 border-[#1E8F6F] pl-6">
             <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
             <p className="text-slate-600 leading-relaxed">
-              To deliver high-quality, ethical, and affordable healthcare
-              services through innovation, excellence, and compassionate patient
-              engagement.
+              To deliver ethical, accessible, and high-quality healthcare
+              services through innovation, medical excellence, and compassionate
+              patient care.
             </p>
           </div>
 
-          <div className="border-l-4 border-blue-700 pl-6">
+          <div className="border-l-4 border-[#1E8F6F] pl-6">
             <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
             <p className="text-slate-600 leading-relaxed">
-              To be a trusted healthcare leader recognized for clinical
-              excellence, advanced technology, and outstanding patient outcomes.
+              To be a leading healthcare institution recognized for advanced
+              technology, clinical excellence, and outstanding patient outcomes.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ================= EMERGENCY CARE ================= */}
-      <section className="bg-blue-900 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* ================= EMERGENCY ================= */}
+      <section className="bg-[#0A3D62] text-white py-28">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">
+            <h2 className="text-3xl font-extrabold mb-6">
               24/7 Emergency & Critical Care
             </h2>
             <p className="text-blue-100 leading-relaxed mb-6">
-              Our emergency department operates round-the-clock with rapid
-              response teams, advanced life-support equipment, and dedicated
-              trauma specialists to handle critical medical situations.
+              Our emergency department operates around the clock with rapid
+              response teams, advanced life-support systems, and experienced
+              trauma specialists ready to act when every second counts.
             </p>
-            <div className="flex items-center gap-4">
-              <FaAmbulance className="text-4xl text-blue-300" />
-              <span className="font-semibold">
-                Emergency Response • Intensive Care • Immediate Treatment
-              </span>
+
+            <div className="flex items-center gap-4 font-semibold">
+              <FaAmbulance className="text-4xl text-[#F39C12]" />
+              Emergency Response • Intensive Care • Immediate Treatment
             </div>
           </div>
 
-          <div className="bg-white/10 rounded-2xl p-10 backdrop-blur">
-            <h4 className="font-semibold mb-4">
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-12">
+            <h4 className="font-semibold mb-6 text-lg">
               Why Patients Trust Riverstone
             </h4>
             <ul className="space-y-3 text-blue-100 text-sm">
-              <li>✔ Fast diagnosis and treatment</li>
+              <li>✔ Rapid diagnosis and treatment</li>
               <li>✔ Advanced medical equipment</li>
-              <li>✔ Strict safety and hygiene standards</li>
+              <li>✔ Strict safety and hygiene protocols</li>
               <li>✔ Compassionate medical professionals</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* ================= CALL TO ACTION ================= */}
-      <section className="py-24">
+      {/* ================= CTA ================= */}
+      <section className="py-28">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-extrabold mb-6">
             Your Health Deserves Expert Care
           </h2>
-          <p className="text-slate-600 mb-8">
-            At Riverstone Hospital, your well-being is our priority. Book an
-            appointment today and experience healthcare built on trust,
-            innovation, and compassion.
+          <p className="text-slate-600 mb-10">
+            Choose Riverstone Hospital for trusted medical expertise,
+            compassionate care, and modern healthcare solutions.
           </p>
-          <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold transition">
+          <button className="bg-[#1E8F6F] hover:bg-[#157A5C] text-white px-10 py-4 rounded-xl font-semibold transition">
             Book an Appointment
           </button>
         </div>
